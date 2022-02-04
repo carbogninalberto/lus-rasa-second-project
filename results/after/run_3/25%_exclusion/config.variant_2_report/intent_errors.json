@@ -1,0 +1,82 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.2648732364177704
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.3212364912033081
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9882153868675232
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.565380871295929
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7520071864128113
+    }
+  },
+  {
+    "text": "last",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6487085223197937
+    }
+  },
+  {
+    "text": "Tell me about Cristiano Ronaldo",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.6387507915496826
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.21879756450653076
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9713557958602905
+    }
+  },
+  {
+    "text": "Does Wade Miley play for New York Yankees?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.6283293962478638
+    }
+  }
+]

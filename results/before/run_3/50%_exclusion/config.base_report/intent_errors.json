@@ -1,0 +1,50 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.8904462456703186
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2955420911312103
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.876393735408783
+    }
+  },
+  {
+    "text": "yo",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.539528489112854
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5851048231124878
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9992122054100037
+    }
+  }
+]

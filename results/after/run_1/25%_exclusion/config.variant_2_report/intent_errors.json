@@ -1,0 +1,66 @@
+[
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.5537459850311279
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5339382886886597
+    }
+  },
+  {
+    "text": "Exit",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.41012680530548096
+    }
+  },
+  {
+    "text": "Luis Alberto",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.87312912940979
+    }
+  },
+  {
+    "text": "Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.6547819972038269
+    }
+  },
+  {
+    "text": "Usain Bolt",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8864541053771973
+    }
+  },
+  {
+    "text": "Does Messi play for Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9180412292480469
+    }
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9635715484619141
+    }
+  }
+]

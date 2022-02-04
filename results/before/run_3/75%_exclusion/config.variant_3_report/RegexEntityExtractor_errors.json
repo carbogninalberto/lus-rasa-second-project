@@ -1,0 +1,162 @@
+[
+  {
+    "text": "What is LeBron height?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "LeBron",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "the first one",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "first",
+        "entity": "ORDINAL"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "choice",
+        "start": 4,
+        "end": 9,
+        "value": "first",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "The first",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "first",
+        "entity": "ORDINAL"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "choice",
+        "start": 4,
+        "end": 9,
+        "value": "first",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tell me about Alberto",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "Alberto",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Messi",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who is James Lebron?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 19,
+        "value": "James Lebron",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What can you tell me about Djokovic?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 35,
+        "value": "Djokovic",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does LeBron play for the Lakers?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "LeBron",
+        "entity": "PERSON"
+      },
+      {
+        "start": 25,
+        "end": 31,
+        "value": "Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does LeBron play for the Lakers now?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "LeBron",
+        "entity": "PERSON"
+      },
+      {
+        "start": 25,
+        "end": 31,
+        "value": "Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you book 3 tickets for the next upcoming event?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 14,
+        "value": "3",
+        "entity": "QUANTITY"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Liverpool",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Liverpool",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

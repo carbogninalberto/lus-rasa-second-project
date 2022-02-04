@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Where does he play?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.4771234095096588
+    }
+  },
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.3116392195224762
+    }
+  },
+  {
+    "text": "What does 42 means?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9825072884559631
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.5452495217323303
+    }
+  },
+  {
+    "text": "the first one",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.849446177482605
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8744658827781677
+    }
+  },
+  {
+    "text": "Who is James Lebron?",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.8834524154663086
+    }
+  },
+  {
+    "text": "Does Cristiano play for the Manchester United?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9281349182128906
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.8910515308380127
+    }
+  },
+  {
+    "text": "yo",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.4161956310272217
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.38234758377075195
+    }
+  },
+  {
+    "text": "Milan",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.2627798616886139
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9984888434410095
+    }
+  }
+]

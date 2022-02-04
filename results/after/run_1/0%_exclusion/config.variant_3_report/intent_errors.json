@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8116604089736938
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6283555626869202
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_sport",
+      "confidence": 0.2561112940311432
+    }
+  },
+  {
+    "text": "Usain Bolt",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9592259526252747
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.3547515273094177
+    }
+  }
+]

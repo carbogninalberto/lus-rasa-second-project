@@ -1,0 +1,74 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.34523725509643555
+    }
+  },
+  {
+    "text": "What is LeBron height?",
+    "intent": "player_height",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4002092778682709
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5759361386299133
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5181881785392761
+    }
+  },
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6709589958190918
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.6583601832389832
+    }
+  },
+  {
+    "text": "yo",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9358994960784912
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9610247015953064
+    }
+  },
+  {
+    "text": "Milan",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9594772458076477
+    }
+  }
+]

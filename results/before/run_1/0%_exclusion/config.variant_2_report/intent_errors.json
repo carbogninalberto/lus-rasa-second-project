@@ -1,0 +1,82 @@
+[
+  {
+    "text": "What is 2 + 2?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.8630133867263794
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7313348054885864
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9329880475997925
+    }
+  },
+  {
+    "text": "Alexandre Pato",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6578407287597656
+    }
+  },
+  {
+    "text": "Lionel Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9851933121681213
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8476226329803467
+    }
+  },
+  {
+    "text": "goodmorning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7457112073898315
+    }
+  },
+  {
+    "text": "good evening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8787485957145691
+    }
+  },
+  {
+    "text": "good morning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.46674585342407227
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9963513612747192
+    }
+  }
+]

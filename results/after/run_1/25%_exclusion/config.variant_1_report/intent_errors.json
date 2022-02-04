@@ -1,0 +1,66 @@
+[
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9556994438171387
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.933138370513916
+    }
+  },
+  {
+    "text": "Exit",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.7106005549430847
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.23906145989894867
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2644472122192383
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8054344654083252
+    }
+  },
+  {
+    "text": "Does Messi play for Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.938885509967804
+    }
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9761859178543091
+    }
+  }
+]

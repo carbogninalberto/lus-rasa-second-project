@@ -1,0 +1,58 @@
+[
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.2590538263320923
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.3141786754131317
+    }
+  },
+  {
+    "text": "nevermind",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4815827012062073
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9710248708724976
+    }
+  },
+  {
+    "text": "Junior Messias",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.3801567852497101
+    }
+  },
+  {
+    "text": "Who's Frazier?",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3266281187534332
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4869556128978729
+    }
+  }
+]

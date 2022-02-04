@@ -1,0 +1,90 @@
+[
+  {
+    "text": "Where does LeBron play?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.4128141701221466
+    }
+  },
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.2908089756965637
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.6921176910400391
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3192901313304901
+    }
+  },
+  {
+    "text": "What is LeBron height?",
+    "intent": "player_height",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.6650084257125854
+    }
+  },
+  {
+    "text": "nevermind",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.9209572076797485
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9986984133720398
+    }
+  },
+  {
+    "text": "Luis Alberto",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.40344905853271484
+    }
+  },
+  {
+    "text": "Who is Messi?",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.8600836396217346
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.7016611695289612
+    }
+  },
+  {
+    "text": "hey there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.44282132387161255
+    }
+  }
+]

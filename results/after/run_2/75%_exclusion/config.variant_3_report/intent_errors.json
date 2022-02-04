@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.5063772797584534
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.6291618347167969
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.2416895478963852
+    }
+  },
+  {
+    "text": "What is LeBron height?",
+    "intent": "player_height",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.5049322247505188
+    }
+  },
+  {
+    "text": "nevermind",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3440752327442169
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9895670413970947
+    }
+  },
+  {
+    "text": "Junior Messias",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.45569849014282227
+    }
+  },
+  {
+    "text": "Who's Frazier?",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.772956132888794
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6215400099754333
+    }
+  },
+  {
+    "text": "hey there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.3113773763179779
+    }
+  }
+]

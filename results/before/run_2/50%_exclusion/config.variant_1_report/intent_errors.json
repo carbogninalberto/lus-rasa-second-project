@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Does Messi play in the Milan?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9999201893806458
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.84511798620224
+    }
+  },
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4460790157318115
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9454739689826965
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6281620264053345
+    }
+  },
+  {
+    "text": "fourth result",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.5815085172653198
+    }
+  },
+  {
+    "text": "James Lay",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8604943752288818
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8634365200996399
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.5588923692703247
+    }
+  },
+  {
+    "text": "Lakers",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9927776455879211
+    }
+  }
+]

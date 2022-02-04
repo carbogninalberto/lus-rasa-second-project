@@ -1,0 +1,26 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7561759948730469
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.298259973526001
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.951087474822998
+    }
+  }
+]

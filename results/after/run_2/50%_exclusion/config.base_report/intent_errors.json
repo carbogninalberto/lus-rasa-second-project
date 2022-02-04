@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "stop_it",
+      "confidence": 0.46663185954093933
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6645485162734985
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6224420666694641
+    }
+  },
+  {
+    "text": "What is LeBron height?",
+    "intent": "player_height",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.3365132212638855
+    }
+  },
+  {
+    "text": "nevermind",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8144944906234741
+    }
+  },
+  {
+    "text": "Luis Alberto",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.5388057231903076
+    }
+  }
+]

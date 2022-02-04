@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Where does he play?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_sport",
+      "confidence": 0.4284101128578186
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8955752849578857
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6384322047233582
+    }
+  },
+  {
+    "text": "Exit",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.2720337212085724
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.3103031814098358
+    }
+  },
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9559774398803711
+    }
+  },
+  {
+    "text": "Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_sport",
+      "confidence": 0.45359328389167786
+    }
+  },
+  {
+    "text": "Usain Bolt",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.7172797918319702
+    }
+  },
+  {
+    "text": "good evening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6758756637573242
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3704880475997925
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.889686107635498
+    }
+  },
+  {
+    "text": "Does Messi play for Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9639063477516174
+    }
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9753604531288147
+    }
+  }
+]

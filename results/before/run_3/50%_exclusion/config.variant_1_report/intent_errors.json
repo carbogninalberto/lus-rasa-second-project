@@ -1,0 +1,66 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.23691944777965546
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8261824250221252
+    }
+  },
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9831194877624512
+    }
+  },
+  {
+    "text": "Does LeBron play for the Lakers?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.7231279611587524
+    }
+  },
+  {
+    "text": "Does LeBron play for the Lakers now?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.6704750657081604
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.26633670926094055
+    }
+  },
+  {
+    "text": "Milan",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.41069915890693665
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9334539771080017
+    }
+  }
+]

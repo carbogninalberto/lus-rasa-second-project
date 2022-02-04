@@ -1,0 +1,21 @@
+models:
+  url: http://134.209.252.112:30006/api/projects/default/models/tags/production
+  token: rasaXToken
+  wait_time_between_pulls: 10
+tracker_store:
+  type: sql
+  dialect: postgresql
+  url: 127.0.0.1
+  port: 30065
+  username: postgres
+  password: password
+  db: tracker
+  login_db: rasa
+event_broker:
+  type: pika
+  url: 127.0.0.1
+  port: 30038
+  username: user
+  password: password
+  queues:
+  - rasa_production_events

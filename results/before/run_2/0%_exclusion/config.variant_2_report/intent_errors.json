@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Does Messi play in the Milan?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9975643754005432
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9895394444465637
+    }
+  },
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.2651926279067993
+    }
+  },
+  {
+    "text": "Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8951408267021179
+    }
+  },
+  {
+    "text": "fourth result",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9989977478981018
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9687730073928833
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.546397864818573
+    }
+  },
+  {
+    "text": "Lakers",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9177048802375793
+    }
+  },
+  {
+    "text": "just one",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.8903803825378418
+    }
+  }
+]

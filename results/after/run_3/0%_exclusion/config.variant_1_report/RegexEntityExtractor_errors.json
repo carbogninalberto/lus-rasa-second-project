@@ -1,0 +1,236 @@
+[
+  {
+    "text": "When was LeBron born?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "LeBron",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How tall is LeBron?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 18,
+        "value": "LeBron",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What sport does Djokovic play?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 24,
+        "value": "Djokovic",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the next upcoming events for Lakers?",
+    "entities": [
+      {
+        "start": 38,
+        "end": 44,
+        "value": "Los Angeles Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the upcoming events for the Lakers?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 43,
+        "value": "Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What can you tell me about Djokovic?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 35,
+        "value": "Djokovic",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "who was Kobe Bryant?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "Kobe",
+        "entity": "PERSON"
+      },
+      {
+        "start": 13,
+        "end": 19,
+        "value": "Bryant",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Cristiano Ronaldo",
+    "entities": [
+      {
+        "start": 14,
+        "end": 31,
+        "value": "Cristiano Ronaldo",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Fausto",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "value": "Fausto",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does LeBron play for the Lakers?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "LeBron",
+        "entity": "PERSON"
+      },
+      {
+        "start": 25,
+        "end": 31,
+        "value": "Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does Messi play for Milan?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "messi",
+        "entity": "PERSON"
+      },
+      {
+        "start": 19,
+        "end": 24,
+        "value": "Milan",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does Pato play for Chicago Cubs?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 9,
+        "value": "Pato",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Book a ticket for Lakers",
+    "entities": [
+      {
+        "start": 18,
+        "end": 24,
+        "value": "Los Angeles Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can I book a ticket for the next Manchester match?",
+    "entities": [
+      {
+        "start": 33,
+        "end": 43,
+        "value": "Manchester",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you book tickets for the next match of the Lakers for four people?",
+    "entities": [
+      {
+        "start": 47,
+        "end": 53,
+        "value": "Lakers",
+        "entity": "ORG"
+      },
+      {
+        "start": 58,
+        "end": 62,
+        "value": "four",
+        "entity": "QUANTITY"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Book one ticket for Liverpool F.C.",
+    "entities": [
+      {
+        "start": 5,
+        "end": 8,
+        "value": "one",
+        "entity": "QUANTITY"
+      },
+      {
+        "start": 20,
+        "end": 33,
+        "value": "Liverpool F.C",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

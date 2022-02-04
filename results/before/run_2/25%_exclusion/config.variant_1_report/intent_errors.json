@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Does Messi play in the Milan?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9996898174285889
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8889076709747314
+    }
+  },
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.5310701727867126
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4620234966278076
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4341018795967102
+    }
+  },
+  {
+    "text": "Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9161767959594727
+    }
+  },
+  {
+    "text": "fourth result",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.6856069564819336
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9144660830497742
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.39291200041770935
+    }
+  }
+]

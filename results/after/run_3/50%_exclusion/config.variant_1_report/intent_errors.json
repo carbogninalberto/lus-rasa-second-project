@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Where does he play?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4448842704296112
+    }
+  },
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.33805570006370544
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9194676280021667
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8536597490310669
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5150547623634338
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.898182213306427
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.3461797535419464
+    }
+  },
+  {
+    "text": "last",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.37210747599601746
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.22833460569381714
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6286205649375916
+    }
+  },
+  {
+    "text": "Does Wade Miley play for New York Yankees?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.9406235218048096
+    }
+  },
+  {
+    "text": "Does Messi play for Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.935044527053833
+    }
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9753494262695312
+    }
+  }
+]

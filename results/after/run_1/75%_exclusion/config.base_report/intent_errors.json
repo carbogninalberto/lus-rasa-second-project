@@ -1,0 +1,90 @@
+[
+  {
+    "text": "What does 42 means?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_sport",
+      "confidence": 0.8732137084007263
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.3428013324737549
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7854067087173462
+    }
+  },
+  {
+    "text": "What's LeBron height?",
+    "intent": "player_height",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.5010770559310913
+    }
+  },
+  {
+    "text": "Exit",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.904375433921814
+    }
+  },
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.32121750712394714
+    }
+  },
+  {
+    "text": "Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.4909915626049042
+    }
+  },
+  {
+    "text": "Usain Bolt",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5757759213447571
+    }
+  },
+  {
+    "text": "Who is Lebron?",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.37623700499534607
+    }
+  },
+  {
+    "text": "good evening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.45935192704200745
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.8230575919151306
+    }
+  }
+]

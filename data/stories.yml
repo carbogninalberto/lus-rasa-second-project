@@ -1,0 +1,295 @@
+version: "2.0"
+stories:
+- story: Ask for Player playing in a team but there is more than one player result
+  steps:
+  - intent: player_plays_in_team
+  - slot_was_set:
+    - player_name: messi
+    - team_name: Liverpool
+  - action: action_player_plays_in_team
+  - intent: player_info_choice
+  - slot_was_set:
+    - player_name: messi
+    - choice_list: last
+  - action: action_player_plays_in_team
+
+- story: Ask for Player playing in a team
+  steps:
+  - intent: player_plays_in_team
+  - slot_was_set:
+    - player_name: Durant
+    - team_name: Brooklyn Nets
+  - action: action_player_plays_in_team
+  - action: utter_more_questions
+
+- story: Ask for Player Information and player_name is recognized without multiple player's name matches
+  steps:
+  - intent: player_info
+  - slot_was_set:
+    - player_name: Durant
+  - action: action_player_info
+  - action: utter_more_questions
+
+- story: Ask for Player Information and player_name is recognized with multiple player's name matches
+  steps:
+  - intent: player_info
+  - slot_was_set:
+    - player_name: alberto
+  - action: action_player_info
+  - intent: player_info_choice
+  - slot_was_set:
+    - player_name: alberto
+    - choice_list: first
+  - action: action_player_info
+
+- story: Ask for Player Height and player_name is recognized without multiple player's name matches
+  steps:
+  - intent: player_height
+  - slot_was_set:
+    - player_name: Lebron
+  - action: action_player_height
+  - action: utter_more_questions
+
+- story: Ask for Player Height and player_name is recognized with multiple player's name matches
+  steps:
+  - intent: player_height
+  - slot_was_set:
+    - player_name: messi
+  - action: action_player_height
+  - intent: player_info_choice
+  - slot_was_set:
+    - player_name: messi
+    - choice_list: first
+  - action: action_player_height
+
+- story: Ask for next upcoming events by providing the team name
+  steps:
+  - intent: upcoming_events
+  - slot_was_set:
+    - team_name: Manchester United
+  - action: action_upcoming_events
+  - action: utter_more_questions
+
+- story: Ask for player sport
+  steps:
+  - intent: player_sport
+  - slot_was_set:
+    - player_name: Cristiano Ronaldo
+  - action: action_player_sport
+  - action: utter_more_questions
+
+- story: Ask for player born date
+  steps:
+  - intent: player_born_date
+  - slot_was_set:
+    - player_name: Cristiano Ronaldo
+  - action: action_player_born_date
+  - action: utter_more_questions
+
+- story: interactive_story_1
+  steps:
+  - intent: booking_ticket_match
+    entities:
+    - ORG: Manchester
+  - action: booking_ticket_form
+  - active_loop: booking_ticket_form
+  - slot_was_set:
+    - team_name: Manchester
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: ticket_quantity
+  - slot_was_set:
+    - team_name: null
+  - slot_was_set:
+    - ticket_quantity: null
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_more_questions
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: stop
+
+- story: Story from Conversation ID 679c4040e4394a26872d75465721be09
+  steps:
+  - intent: upcoming_event
+    entities:
+    - PERSON: Chelsea F.C.
+  - action: action_upcoming_events
+
+- story: Story from Conversation ID 7457112c92f04e77b309abb632b164e7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: player_sport
+    entities:
+    - PERSON: Djokovic
+  - action: action_player_sport
+  - action: utter_more_questions
+
+- story: Story from Conversation ID fe6e0c5f078d4a62bf9925b45df4602a
+  steps:
+  - intent: player_plays_in_team
+    entities:
+    - PERSON: Mendy
+    - ORG: Chelsea
+    - PERSON: Mendy
+  - action: action_player_plays_in_team
+  - action: utter_more_questions
+
+- story: Story from Conversation ID b0cb417bcb824601988c49fde74e9ef9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: player_info
+    entities:
+    - PERSON: Messi
+    - PERSON: Messi
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: Messi
+  - intent: player_info_choice
+    entities:
+    - PERSON: Junior Messias
+  - action: action_player_info
+
+- story: Story from Conversation ID d65eded01be747cc8daca3e7a43d71aa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: player_info
+    entities:
+    - PERSON: Kobe Bryant
+    - PERSON: Kobe
+    - PERSON: Bryant
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+
+- story: Story from Conversation ID bd59270efcfa43c596f1ee1da76d48aa
+  steps:
+  - intent: player_info
+    entities:
+    - PERSON: Phelps
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: Phelps
+  - intent: player_info_choice
+    entities:
+    - ORDINAL: first
+  - action: action_player_info
+
+- story: Story from Conversation ID 1f59c1b9256c49ce8c21ac11eea62247
+  steps:
+  - intent: player_info
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - intent: player_info
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - intent: player_info_choice
+    entities:
+    - PERSON: Usain Bolt
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - action: utter_more_questions
+
+- story: Story from Conversation ID c32c9f0c0c1941fabfc31a53389bb914
+  steps:
+  - intent: player_plays_in_team
+    entities:
+    - PERSON: Crisitano Ronaldo
+    - PERSON: Los Angeles Lakers
+    - ORG: Los Angeles Lakers
+  - action: action_player_plays_in_team
+
+- story: Story from Conversation ID 33c8862732394f3496c1e560bb2b61cc
+  steps:
+  - intent: upcoming_events
+  - action: action_upcoming_events
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - action: utter_more_questions
+  - intent: upcoming_events
+    entities:
+    - ORG: Next Chicago Cubs
+  - action: action_upcoming_events
+
+- story: Story from Conversation ID 50439d52a617493098aa60e9ec8164d0
+  steps:
+  - intent: player_plays_in_team
+    entities:
+    - PERSON: Wade Miley
+    - ORG: Yankees
+  - action: action_player_plays_in_team
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - intent: player_plays_in_team
+    entities:
+    - PERSON: Wade Miley
+    - ORG: New York Yankees
+  - action: action_player_plays_in_team
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+
+- story: Story from Conversation ID 9b0c064b16f24a12a793cd9ae6307270
+  steps:
+  - intent: player_plays_in_team
+    entities:
+    - PERSON: Frazier
+    - ORG: the Chicago Cubs
+    - PERSON: Frazier
+  - action: action_player_plays_in_team
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+
+- story: Story from Conversation ID 6d3c209119414ae0ba5b2aa2b8a02724
+  steps:
+  - intent: player_info
+    entities:
+    - PERSON: Frazier
+    - PERSON: Frazier
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: Frazier
+  - intent: player_plays_in_team
+    entities:
+    - PERSON: Todd Frazier
+    - PERSON: Frazier
+  - action: action_player_plays_in_team
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - intent: player_info_choice
+    entities:
+    - ORDINAL: third
+    - choice: third
+    - choice: third
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - action: utter_more_questions

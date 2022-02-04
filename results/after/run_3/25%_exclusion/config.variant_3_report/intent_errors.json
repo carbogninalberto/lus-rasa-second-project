@@ -1,0 +1,58 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.19247733056545258
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.6566925644874573
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8618828058242798
+    }
+  },
+  {
+    "text": "last",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.37469804286956787
+    }
+  },
+  {
+    "text": "Tell me about Cristiano Ronaldo",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.5410119295120239
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8368048667907715
+    }
+  },
+  {
+    "text": "Does Wade Miley play for New York Yankees?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.38392508029937744
+    }
+  }
+]

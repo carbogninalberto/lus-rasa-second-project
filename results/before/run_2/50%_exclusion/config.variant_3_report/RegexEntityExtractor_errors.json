@@ -1,0 +1,220 @@
+[
+  {
+    "text": "Does Messi play in the Milan?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is LeBron tall?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 9,
+        "value": "LeBron",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "When was LeBron born?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "LeBron",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Messi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "fourth result",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "fourth",
+        "entity": "ORDINAL"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "choice",
+        "start": 0,
+        "end": 6,
+        "value": "fourth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What do you know about Djokovic?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "Djokovic",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about James",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "James",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "James Lay",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "James",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does Messi play in Manchester United?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "messi",
+        "entity": "PERSON"
+      },
+      {
+        "start": 19,
+        "end": 24,
+        "value": "Milan",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does messi play in Manchester?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "messi",
+        "entity": "PERSON"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "value": "Manchester",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Book a ticket for Lakers",
+    "entities": [
+      {
+        "start": 18,
+        "end": 24,
+        "value": "Los Angeles Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Lakers",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Los Angeles Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Book three tickets for the next match",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "three",
+        "entity": "QUANTITY"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "just one",
+    "entities": [
+      {
+        "start": 5,
+        "end": 8,
+        "value": "one",
+        "entity": "QUANTITY"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Book one ticket for the Liverpool",
+    "entities": [
+      {
+        "start": 5,
+        "end": 8,
+        "value": "one",
+        "entity": "QUANTITY"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "value": "Liverpool",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

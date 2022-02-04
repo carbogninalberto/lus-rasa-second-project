@@ -1,0 +1,98 @@
+[
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.3484776020050049
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.3207344114780426
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8914150595664978
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.3639393448829651
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.7742358446121216
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8845939636230469
+    }
+  },
+  {
+    "text": "last",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.2572695016860962
+    }
+  },
+  {
+    "text": "Tell me about Cristiano Ronaldo",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.931451141834259
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8529105186462402
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9771019816398621
+    }
+  },
+  {
+    "text": "goodmorning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.993092954158783
+    }
+  },
+  {
+    "text": "good evening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.922164797782898
+    }
+  }
+]

@@ -1,0 +1,173 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- stop_it:
+    use_entities: []
+- affirm:
+    use_entities: []
+- deny:
+    use_entities: []
+- goodbye:
+    use_entities: []
+- greet:
+    use_entities: []
+- out_of_scope:
+    use_entities: []
+- player_info:
+    use_entities:
+    - PERSON
+- player_info_choice:
+    use_entities:
+    - choice
+    - ORDINAL
+- player_plays_in_team:
+    use_entities:
+    - PERSON
+    - ORG
+- upcoming_events:
+    use_entities:
+    - ORG
+- booking_ticket_match:
+    use_entities: true
+- player_height:
+    use_entities:
+    - PERSON
+- player_born_date:
+    use_entities:
+    - PERSON
+- player_sport:
+    use_entities:
+    - PERSON
+- player_team:
+    use_entities:
+    - PERSON
+- nlu_fallback:
+    use_entities: true
+- stop:
+    use_entities: true
+- upcoming_event:
+    use_entities: true
+- next_upcoming_event:
+    use_entities: true
+entities:
+- PERSON
+- ORDINAL
+- choice
+- ORG
+- QUANTITY
+slots:
+  player_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  choice_list:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  team_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  event_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  ticket_quantity:
+    type: rasa.shared.core.slots.FloatSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    max_value: 5.0
+    min_value: 0.0
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_out_of_scope:
+  - text: Sorry, that's something that I don't know.
+  utter_greet:
+  - text: Hello There! How may I help you?
+  - text: Nice to see you! How can I help you?
+  - text: Hi! How may I help you today?
+  utter_goodbye:
+  - text: Bye
+  utter_searching:
+  - text: Just a moment, I am gathering information...
+  - text: Ok, wait a minute...
+  - text: looking for information...
+  - text: I'll be right back...
+  utter_no_player_name:
+  - text: Sorry, I found no player with the name {player_name}.
+  utter_no_team_name:
+  - text: Sorry, I found no team with the name {team_name}.
+  utter_affermative_player_plays_in_team:
+  - text: Yes, {player_name} plays in {team_name}.
+  - text: You are correct! According to my knowledge {player_name} plays for {team_name}!
+  utter_negative_player_plays_in_team:
+  - text: It seems that {player_name} is not currently playing for {team_name}!
+  - text: Negative, {player_name} does not play in {team_name}.
+  utter_player_height:
+  - text: the player {player_name} stands at {player_height}!
+  - text: the player {player_name} stature is {player_height}.
+  utter_player_born_date:
+  - text: the player {player_name} was born {born_date}!
+  utter_player_sport:
+  - text: the player {player_name} plays {sport_name}!
+  utter_upcoming_events:
+  - text: The next upcoming events are
+  utter_booking_question:
+  - text: Do you want to book a ticket for the next upcoming event?
+  utter_booking_tickets_confirmation:
+  - text: You want to book {ticket_quantity} tickets, right?
+  - text: So, you want to book {ticket_quantity} tickets, correct?
+  utter_ask_ticket_quantity:
+  - text: How many tickets should I book?
+  utter_ask_team_name:
+  - text: May I ask you which team do you like to get a ticket for?
+  - text: Which team does play in the event?
+  utter_booking_confirmation:
+  - text: I booked for you {ticket_quantity} tickets for the {event_name}.
+  - text: So, I booked {ticket_quantity} tickets for the {event_name}.
+  utter_booking_confirmed:
+  - text: Perfect! I booked {ticket_quantity} tickets for the {event_name}.
+  - text: Booking completed! {ticket_quantity} tickets booked for the {event_name}.
+  utter_no_info:
+  - text: Sorry, I didn't found any information.
+  - text: Sorry, there are no results.
+  utter_no_player:
+  - text: Sorry, I did not understand the player name. Can you rephrase the question for me, please?
+  utter_no_team:
+  - text: Sorry, I did not understand the team name. Can you rephrase the question for me, please?
+  utter_no_event:
+  - text: Sorry, I did not understand the event name. Can you rephrase the question for me, please?
+  utter_more_questions:
+  - text: May I help you with something else?
+actions:
+- action_player_info
+- action_player_height
+- action_player_born_date
+- action_player_sport
+- action_player_plays_in_team
+- action_player
+- action_upcoming_events
+- validate_booking_ticket_form
+forms:
+  booking_ticket_form:
+    required_slots:
+      team_name:
+      - entity: ORG
+        type: from_entity
+      ticket_quantity:
+      - entity: QUANTITY
+        type: from_entity
+e2e_actions: []

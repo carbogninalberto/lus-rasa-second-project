@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Where does he play?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6912656426429749
+    }
+  },
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.7079890966415405
+    }
+  },
+  {
+    "text": "What does 42 means?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9292001724243164
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7986206412315369
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9474664926528931
+    }
+  },
+  {
+    "text": "Who is James Lebron?",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.900200366973877
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.21179939806461334
+    }
+  },
+  {
+    "text": "yo",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4619731903076172
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.2912224531173706
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9957650303840637
+    }
+  }
+]

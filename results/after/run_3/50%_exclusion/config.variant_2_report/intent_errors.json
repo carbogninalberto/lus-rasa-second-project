@@ -1,0 +1,114 @@
+[
+  {
+    "text": "Where does he play?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8164699673652649
+    }
+  },
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.6301409602165222
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9785848259925842
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9849614500999451
+    }
+  },
+  {
+    "text": "stop",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4031244218349457
+    }
+  },
+  {
+    "text": "no way",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.5837792158126831
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "player_born_date",
+      "confidence": 0.8680905699729919
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5485396385192871
+    }
+  },
+  {
+    "text": "Tell me about Cristiano Ronaldo",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.8976131081581116
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.8298054337501526
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9024513959884644
+    }
+  },
+  {
+    "text": "Does Wade Miley play for New York Yankees?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.9160300493240356
+    }
+  },
+  {
+    "text": "Does Messi play for Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.941046953201294
+    }
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.9834156036376953
+    }
+  }
+]

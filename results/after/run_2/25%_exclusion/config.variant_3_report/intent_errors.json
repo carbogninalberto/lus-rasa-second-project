@@ -1,0 +1,58 @@
+[
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5033730864524841
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.42905423045158386
+    }
+  },
+  {
+    "text": "nevermind",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.2964877188205719
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8894155621528625
+    }
+  },
+  {
+    "text": "Junior Messias",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.5348100066184998
+    }
+  },
+  {
+    "text": "Luis Alberto",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.38694295287132263
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6981648206710815
+    }
+  }
+]

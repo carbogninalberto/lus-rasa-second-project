@@ -1,0 +1,117 @@
+{
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "player_info": {
+    "precision": 0.5,
+    "recall": 0.75,
+    "f1-score": 0.6,
+    "support": 4,
+    "confused_with": {
+      "player_plays_in_team": 1
+    }
+  },
+  "player_plays_in_team": {
+    "precision": 0.5714285714285714,
+    "recall": 1.0,
+    "f1-score": 0.7272727272727273,
+    "support": 4,
+    "confused_with": {}
+  },
+  "booking_ticket_match": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 6,
+    "confused_with": {
+      "player_plays_in_team": 1
+    }
+  },
+  "player_born_date": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "player_team": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "player_plays_in_team": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "player_info": 1,
+      "player_height": 1
+    }
+  },
+  "goodbye": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "player_height": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "player_info": 1
+    }
+  },
+  "out_of_scope": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "player_info": 1,
+      "goodbye": 1
+    }
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "goodbye": 1
+    }
+  },
+  "player_info_choice": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "booking_ticket_match": 1
+    }
+  },
+  "accuracy": 0.6666666666666666,
+  "macro avg": {
+    "precision": 0.5337301587301587,
+    "recall": 0.5486111111111112,
+    "f1-score": 0.5133838383838384,
+    "support": 30
+  },
+  "weighted avg": {
+    "precision": 0.6428571428571428,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6214141414141413,
+    "support": 30
+  }
+}

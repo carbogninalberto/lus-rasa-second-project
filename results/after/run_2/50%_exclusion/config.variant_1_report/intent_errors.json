@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.25928881764411926
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.7094767689704895
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "player_sport",
+      "confidence": 0.339682936668396
+    }
+  },
+  {
+    "text": "What is LeBron height?",
+    "intent": "player_height",
+    "intent_prediction": {
+      "name": "player_sport",
+      "confidence": 0.7313508987426758
+    }
+  },
+  {
+    "text": "nevermind",
+    "intent": "stop_it",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.39189961552619934
+    }
+  },
+  {
+    "text": "no way",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2841673195362091
+    }
+  },
+  {
+    "text": "Junior Messias",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.30690181255340576
+    }
+  },
+  {
+    "text": "Luis Alberto",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "stop_it",
+      "confidence": 0.4148755371570587
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.34840908646583557
+    }
+  },
+  {
+    "text": "Does Wade Miley play for New York Yankees?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "upcoming_events",
+      "confidence": 0.4839009940624237
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "choice": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "QUANTITY": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "ORG": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "PERSON": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.1111111111111111,
+    "f1-score": 0.19999999999999998,
+    "support": 27
+  },
+  "macro avg": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1-score": 0.25,
+    "support": 27
+  },
+  "weighted avg": {
+    "precision": 0.1111111111111111,
+    "recall": 0.1111111111111111,
+    "f1-score": 0.1111111111111111,
+    "support": 27
+  }
+}

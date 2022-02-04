@@ -1,0 +1,251 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: '2.0'
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      Tell me about [Lebron]{"entity": "PERSON"}
+    intent: player_info
+  - action: action_player_info
+  - user: |
+      Does [Cristiano Ronaldo]{"entity": "PERSON"} play for [Manchester]{"entity": "ORG"}?
+    intent: player_plays_in_team
+  - action: action_player_plays_in_team
+
+- story: happy path 2
+  steps:
+  - user: |
+      Tell me about [Messi]{"entity": "PERSON"}
+    intent: player_info
+  - action: action_player_info
+  - user: |
+      How tall is [Lebron]{"entity": "PERSON"}?
+    intent: player_height
+  - action: action_player_height
+
+- story: happy path 3
+  steps:
+  - user: |
+      Book [one]{"entity": "QUANTITY"} ticket for the [Lakers]{"entity": "ORG"}
+    intent: booking_ticket_match
+  - action: validate_booking_ticket_form
+  - user: |
+      Does [Lebron]{"entity": "PERSON"} play for the [Milan]{"entity": "ORG"}?
+    intent: player_plays_in_team
+  - action: action_player_plays_in_team
+
+- story: happy path 4
+  steps:
+  - user: |
+      What are the upcoming events for  [Milan]{"entity": "ORG"}?
+    intent: upcoming_events
+  - action: action_upcoming_events
+  - user: |
+      Does [Ibraimovich]{"entity": "PERSON"} play for the [Inter]{"entity": "ORG"}?
+    intent: player_plays_in_team
+  - action: action_player_plays_in_team
+
+- story: Story from Conversation ID 652458bd147a43d9a2ba2ab89387ca62
+  steps:
+  - intent: greet
+    user: |-
+      hi
+  - action: utter_greet
+  - intent: player_info
+    user: |-
+      Tell me about [James](PERSON)[James](PERSON)
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: James
+  - intent: player_info
+    user: |-
+      [James Lay](PERSON)[James](PERSON) Lay
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: James
+  - intent: player_info_choice
+    user: |-
+      the [third](ORDINAL)[third](choice)[third](choice) one
+  - action: action_player_info
+  - intent: next_upcoming_event
+    user: |-
+      What are the next upcoming events for [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}[Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}?
+  - action: action_upcoming_events
+
+- story: Story from Conversation ID 7f6d43333049476f92071d04c0f75c29
+  steps:
+  - intent: greet
+    user: |-
+      Hi
+  - action: utter_greet
+  - intent: player_info
+    user: |-
+      tell me about [Messi](PERSON)[Messi](PERSON)
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: Messi
+  - intent: player_info_choice
+    user: |-
+      the [first](ORDINAL)[first](choice)[first](ORDINAL) one
+  - action: action_player_info
+  - intent: booking_ticket_match
+    user: |-
+      Can you please book [four](QUANTITY) tickets for [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}[Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"} event?
+  - action: booking_ticket_form
+  - active_loop: booking_ticket_form
+  - slot_was_set:
+    - team_name:
+      - Los Angeles Lakers
+      - Los Angeles Lakers
+  - slot_was_set:
+    - ticket_quantity: four
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_player_info
+- story: Story from Conversation ID 25da0ecd09e84ab2b037c93c776121fe
+  steps:
+  - intent: player_plays_in_team
+    user: |-
+      Does [Cristiano Ronaldo](PERSON) play in Manchester?
+  - action: action_player_plays_in_team
+  - slot_was_set:
+    - player_name: Cristiano Ronaldo
+  - intent: greet
+    user: |-
+      Hi
+  - action: utter_greet
+  - intent: player_plays_in_team
+    user: |-
+      Does [Cristiano Ronaldo](PERSON) play in [Manchester United](ORG)?
+  - action: action_player_plays_in_team
+
+- story: Story from Conversation ID 03cc39a3a2f44e21964d4b68928e0408
+  steps:
+  - intent: greet
+    user: |-
+      Hey there
+  - action: utter_greet
+  - intent: player_height
+    user: |-
+      How tall is [Ibraimovich](PERSON)?
+  - action: action_player_height
+  - intent: player_height
+    user: |-
+      How tall is [Ibrahimovic](PERSON)?
+  - action: action_player_height
+  - intent: booking_ticket_match
+    user: |-
+      Book one ticket for the Liverpool
+  - action: booking_ticket_form
+  - active_loop: booking_ticket_form
+  - slot_was_set:
+    - team_name: null
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: team_name
+  - intent: deny
+    user: |-
+      Liverpool
+  - action: booking_ticket_form
+  - slot_was_set:
+    - team_name: null
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: team_name
+  - intent: deny
+    user: |-
+      [Liverpool F.C.](ORG)
+  - action: booking_ticket_form
+  - slot_was_set:
+    - team_name: Liverpool F.C.
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: ticket_quantity
+  - intent: booking_ticket_match
+    user: |-
+      just [one](QUANTITY) ticket
+  - action: booking_ticket_form
+  - slot_was_set:
+    - team_name: Liverpool F.C.
+  - slot_was_set:
+    - ticket_quantity: one
+  - slot_was_set:
+    - requested_slot: ticket_quantity
+  - intent: player_info_choice
+    user: |-
+      One
+  - action: booking_ticket_form
+  - slot_was_set:
+    - team_name: Liverpool F.C.
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: ticket_quantity
+  - intent: out_of_scope
+    user: |-
+      1
+  - action: booking_ticket_form
+  - slot_was_set:
+    - team_name: Liverpool F.C.
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: ticket_quantity
+  - intent: greet
+    user: |-
+      tow
+  - action: booking_ticket_form
+  - slot_was_set:
+    - team_name: Liverpool F.C.
+  - slot_was_set:
+    - ticket_quantity: null
+  - slot_was_set:
+    - requested_slot: ticket_quantity
+  - intent: booking_ticket_match
+    user: |-
+      [two](QUANTITY)
+  - action: booking_ticket_form
+- story: Story from Conversation ID 47948e93043c452b819fdcd47e6315fa
+  steps:
+  - intent: player_info
+    user: |-
+      Tell me about [Fausto](PERSON)[Fausto](PERSON)
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: Fausto
+  - intent: player_info_choice
+    user: |-
+      the [last](choice) one
+  - action: action_player_info
+  - slot_was_set:
+    - player_name: null
+  - slot_was_set:
+    - choice_list: null
+  - action: utter_more_questions
+  - intent: goodbye
+    user: |-
+      Bye
+  - action: utter_goodbye
+- story: Story from Conversation ID 81bc1a6afa95489cba6828f9436db0c9
+  steps:
+  - intent: greet
+    user: |-
+      Hello there
+  - action: utter_greet
+  - intent: player_info
+    user: |-
+      Who is [James White](PERSON)[James](PERSON) White?
+  - action: action_player_info
+  - intent: player_sport
+    user: |-
+      What sport does [James White](PERSON)[James](PERSON) White play?
+  - action: action_player_sport

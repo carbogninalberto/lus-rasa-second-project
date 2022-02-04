@@ -1,0 +1,74 @@
+[
+  {
+    "text": "What is 2 + 2?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9999028444290161
+    }
+  },
+  {
+    "text": "Where is the Moon?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.2722299098968506
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9887915849685669
+    }
+  },
+  {
+    "text": "Alexandre Pato",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.28598448634147644
+    }
+  },
+  {
+    "text": "Lionel Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9762009978294373
+    }
+  },
+  {
+    "text": "cee you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.4524460434913635
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.48099061846733093
+    }
+  },
+  {
+    "text": "Liverpool",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7204567193984985
+    }
+  },
+  {
+    "text": "Lakers",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9915683269500732
+    }
+  }
+]

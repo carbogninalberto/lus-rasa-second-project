@@ -1,0 +1,99 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - out_of_scope
+  - player_info
+  - player_info_choice:
+      use_entities:
+      - PERSON
+      - ORDINAL
+      - choice
+  - player_plays_in_team:
+      use_entities:
+      - PERSON
+      - ORG
+
+responses:
+  utter_out_of_scope:
+  - text: Sorry, that's something that I don't know.
+  # utter_teams_match_results:
+  # - text: |
+  #     "Oh I found that {team} won! {result}"
+  #     "{result}! What a good match for {team}."
+
+  utter_greet:
+    - text: Hello There! How may I help you?
+    - text: Nice to see you! How can I help you?
+    - text: Hi! How may I help you today?
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_searching:
+    - text: Just a moment, I am gathering information...
+    - text: Ok, wait a minute...
+    - text: looking for information...
+    - text: I'll be right back...
+
+  utter_no_player_name:
+    - text: Sorry, I found no player with the name {player_name}.
+
+  utter_no_team_name:
+    - text: Sorry, I found no team with the name {team_name}.
+
+  utter_affermative_player_plays_in_team:
+    - text: Yes, {player_name} plays in {team_name}.
+    - text: You are correct! According to my knowledge {player_name} plays for {team_name}!
+
+  utter_negative_player_plays_in_team:
+    - text: It seems that {player_name} is not currently playing for {team_name}!
+    - text: Negative, {player_name} does not play in {team_name}.
+  
+  utter_no_player:
+    - text: Sorry, I did not understand the player name. Can you rephrase the question for me, please?
+  
+  utter_no_team:
+    - text: Sorry, I did not understand the team name. Can you rephrase the question for me, please?
+
+  utter_more_questions:
+    - text: May I help you with something else?
+  
+actions:
+  - action_player_info
+  - action_player_plays_in_team
+
+entities:
+  - PERSON
+  - ORDINAL
+  - choice
+  - ORG
+
+slots:
+  player_name:
+    type: text
+    influence_conversation: true
+    # mappings:
+    # - type: from_entity
+    #   entity: PERSON
+
+  choice_list:
+    type: text
+    influence_conversation: true
+    # mappings:
+    # - type: from_entity
+    #   entity: ORDINAL
+    # - type: from_entity
+    #   entity: choice
+  
+  team_name:
+    type: text
+    influence_conversation: true
+    # mappings:
+    # - type: from_entity
+    #   entity: ORG
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

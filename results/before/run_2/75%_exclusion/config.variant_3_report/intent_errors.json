@@ -1,0 +1,130 @@
+[
+  {
+    "text": "Does Messi play in the Milan?",
+    "intent": "player_team",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.41638612747192383
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9830679893493652
+    }
+  },
+  {
+    "text": "Does god exists?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.5137315988540649
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6818398833274841
+    }
+  },
+  {
+    "text": "no way",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.2656608819961548
+    }
+  },
+  {
+    "text": "n",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6716423034667969
+    }
+  },
+  {
+    "text": "Messi",
+    "intent": "player_info_choice",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9877193570137024
+    }
+  },
+  {
+    "text": "James Lay",
+    "intent": "player_info",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.20692627131938934
+    }
+  },
+  {
+    "text": "Does Cristiano Ronaldo play in Manchester United?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9978793859481812
+    }
+  },
+  {
+    "text": "Does Messi play in Manchester United?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.9954487681388855
+    }
+  },
+  {
+    "text": "Does messi play in Milan?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "player_team",
+      "confidence": 0.6699357628822327
+    }
+  },
+  {
+    "text": "Does messi play in Manchester?",
+    "intent": "player_plays_in_team",
+    "intent_prediction": {
+      "name": "booking_ticket_match",
+      "confidence": 0.716651201248169
+    }
+  },
+  {
+    "text": "who's there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_info",
+      "confidence": 0.9183183908462524
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "player_height",
+      "confidence": 0.5887196063995361
+    }
+  },
+  {
+    "text": "Lakers",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_plays_in_team",
+      "confidence": 0.9985278248786926
+    }
+  },
+  {
+    "text": "just one",
+    "intent": "booking_ticket_match",
+    "intent_prediction": {
+      "name": "player_info_choice",
+      "confidence": 0.8796754479408264
+    }
+  }
+]

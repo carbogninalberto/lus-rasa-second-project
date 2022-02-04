@@ -1,0 +1,152 @@
+[
+  {
+    "text": "Lionel Messi",
+    "entities": [
+      {
+        "start": 7,
+        "end": 12,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "tell me about messi",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about messi",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Messi",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "Messi",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does messi play in Manchester?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "messi",
+        "entity": "PERSON"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "value": "Manchester",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Does LeBron play for the Lakers this season?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "LeBron",
+        "entity": "PERSON"
+      },
+      {
+        "start": 25,
+        "end": 31,
+        "value": "Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is LeBron playing for the Lakers now?",
+    "entities": [
+      {
+        "start": 3,
+        "end": 9,
+        "value": "LeBron",
+        "entity": "PERSON"
+      },
+      {
+        "start": 26,
+        "end": 32,
+        "value": "Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Liverpool",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Liverpool",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Book four tickets for Liverpool F.C.",
+    "entities": [
+      {
+        "start": 5,
+        "end": 9,
+        "value": "four",
+        "entity": "QUANTITY"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Lakers",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Los Angeles Lakers",
+        "entity": "ORG"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you please book four tickets for Lakers event?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 24,
+        "value": "four",
+        "entity": "QUANTITY"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

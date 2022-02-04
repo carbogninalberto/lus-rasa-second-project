@@ -1,0 +1,257 @@
+version: "2.0"
+nlu:
+- intent: stop_it
+  examples: |
+    - stop!
+    - stop it!
+    - quit!
+    - Exit
+    - stop please
+    - nevermind
+    - stop
+    - exit
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - Where is the Moon?
+    - What does 42 means?
+    - Does god exists?
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - yo
+    - nice to see you
+    - what's up
+    - who's there
+    - Hi
+    - Hello
+    - Hey there
+    - Hello there
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - talk you later
+    - Bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - good point
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - No
+    - Liverpool F.C.
+- intent: player_info
+  examples: |
+    - What can you tell me about [Djokovic](PERSON)?
+    - Tell me about [Messi](PERSON)
+    - What do you know about [Djokovic](PERSON)?
+    - Who is [Messi](PERSON)?
+    - Who is [Lebron](PERSON)?
+    - Who is [James Lebron](PERSON)?
+    - Tell me about [[Cristiano Ronaldo](PERSON)](PERSON)
+    - Tell me about [pato](PERSON)
+    - Tell me about [Djokovic](PERSON)
+    - [James Lay](PERSON)
+    - Tell me about [James](PERSON)
+    - Who is [James](PERSON) White?
+    - Tell me about [Fausto](PERSON)
+    - Who is [Phelps](PERSON)
+    - who was [Kobe](PERSON) [Bryant](PERSON)?
+    - What can you tell me about [Messi](PERSON)?
+    - What do you know about [Usain](PERSON)?
+    - What do you about [usain bolt](PERSON)?
+    - What can you tell me about [Frazier](PERSON)
+    - Who's [Frazier](PERSON)?
+- intent: player_info_choice
+  examples: |
+    - [Messi](PERSON)
+    - The [first](ORDINAL)
+    - [first](ORDINAL) one
+    - [fourth](ORDINAL) result
+    - the [third](choice) one
+    - [last](choice)
+    - [Luis Alberto](PERSON)
+    - [Lionel Messi](PERSON)
+    - [Alexandre Pato](PERSON)
+    - the [first](ORDINAL) one
+    - [Junior Messias](PERSON)
+    - [Usain Bolt](PERSON)
+    - The [third](choice) one
+    - Todd [Frazier](PERSON)
+    - [third](choice) one
+- intent: player_plays_in_team
+  examples: |
+    - Is [LeBron](PERSON) a [Lakers](ORG) player?
+    - Is [LeBron](PERSON) playing for the [Lakers](ORG)?
+    - Is [LeBron](PERSON) playing for the [Lakers](ORG) now?
+    - Is [LeBron](PERSON) playing for the [Lakers](ORG) at the moment?
+    - Does [LeBron](PERSON) play for the [Lakers](ORG)?
+    - Does [LeBron](PERSON) play for the [Lakers](ORG) now?
+    - Does [LeBron](PERSON) play for the [Lakers](ORG) this season?
+    - Is it true that [LeBron](PERSON) plays in the [Lakers](ORG)?
+    - Does Cristiano play for the [Manchester United](ORG)?
+    - Does [Cristiano Ronaldo](PERSON) play for [Manchester United](ORG)?
+    - Does [Cristiano Ronaldo](PERSON) play in [Manchester](ORG)?
+    - Does [messi](PERSON) play in [Milan](ORG)?
+    - Does [Messi](PERSON) play in [Manchester United](ORG)?
+    - Does Messi play in the [Manchester United](ORG)?
+    - Does [Messi](PERSON) play for Milan?
+    - Does [Cristiano Ronaldo](PERSON) play for Manchester?
+    - Does [messi](PERSON) play in [Manchester](ORG)?
+    - Does [Cristiano Ronaldo](PERSON) play in [Manchester United](ORG)?
+    - Does [Mendy](PERSON) play for Chelsea?
+    - Does Crisitano Ronaldo play for [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}?
+    - Does [Pato](PERSON) play for Chicago Cubs?
+    - Does [Wade Miley](PERSON) play for Yankees?
+    - Does Wade Miley play for New York Yankees?
+    - Does [Frazier](PERSON) play for Chicago Cubs?
+    - Does [Frazier](PERSON) play for the Chicago Cubs?
+- intent: upcoming_events
+  examples: |
+    - What are the upcoming events for the [Lakers](ORG)?
+    - What are the next upcoming event for the [Lakers](ORG)?
+    - What are the next matches for the [Lakers](ORG)?
+    - What are the next upcoming events for [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}?
+    - What are the Fiorentina next matches?
+    - What are the next Chelsea F.C. events?
+    - Tell me the next upcoming events for Yankees
+    - What are the next upcoming Yankees events?
+    - What are the next upcoming events for New York Yankees?
+    - What are the next [Chicago cubs](ORG) events?
+    - Next Chicago Cubs matches
+- intent: next_upcoming_event
+  examples: |
+    - What is the upcoming event for the [Lakers](ORG)?
+    - What is the next upcoming event for the [Lakers](ORG)?
+    - When is the next match for the [Lakers](ORG)?
+- intent: booking_ticket_match
+  examples: |
+    - Can you book [1](QUANTITY) ticket for the next match of the [Lakers](ORG)?
+    - Can you book a ticket for the next match of the [Milan](ORG)?
+    - Can you book tickets for the next match of the [Lakers](ORG) for [four](QUANTITY) people?
+    - Book [two](QUANTITY) tickets for the [Lakers](ORG) match
+    - Book [three](QUANTITY) tickets for the next match
+    - Please book tickets for the next match
+    - Please book tickets for the next event
+    - Please book tickets for the upcoming event
+    - Can you book a ticket?
+    - book a ticket
+    - Can you book five tickets for the next upcoming event?
+    - Can you book [3](QUANTITY) tickets for the next upcoming event?
+    - Can you book [2](QUANTITY) tickets for the next match of [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}?
+    - [four](QUANTITY) tickets
+    - Book a ticket for [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"}
+    - Book ticket
+    - Can you please book [four](QUANTITY) tickets for Lakers event?
+    - Book one tickets for [Liverpool F.C](ORG).
+    - Book [1](QUANTITY) tickets for[ Liverpool F.C](ORG).
+    - Book [one](QUANTITY) ticket for [Liverpool F.C](ORG).
+    - Book [one](QUANTITY) ticket for the [Liverpool](ORG)
+    - Book tickets for [four](QUANTITY) people for the next [lakers]{"entity": "ORG", "value": "Los Angeles Lakers"} event
+    - Book a ticket for [five](QUANTITY) people for [Lakers](ORG)
+    - Can I book a ticket for the next [Manchester](ORG) match?
+    - [three]{"entity": "QUANTITY", "value": "3"} tickets please
+    - Book [four](QUANTITY) tickets for Liverpool F.C.
+    - Can you book a ticket for the next [Lakers]{"entity": "ORG", "value": "Los Angeles Lakers"} match?
+- intent: player_height
+  examples: |
+    - How tall is [LeBron](PERSON)?
+    - What is [LeBron](PERSON) height?
+    - Is [LeBron](PERSON) tall?
+    - What's [LeBron](PERSON) height?
+    - How tall is Ibrahimovic?
+    - How tall is Ibraimovich?
+    - How tall is [Lebron](PERSON)?
+- intent: player_born_date
+  examples: |
+    - When was [LeBron](PERSON) born?
+    - When was he born?
+    - When was she born?
+    - On what day was he born?
+    - On what day was she born?
+    - On what day was [LeBron](PERSON) born?
+- intent: player_sport
+  examples: |
+    - What sport does [LeBron](PERSON) play?
+    - What is the sport of [LeBron](PERSON)?
+    - What sport does he play?
+    - What sport does she play?
+    - What sport does [Lebron](PERSON) play?
+    - What sport does [Djokovic](PERSON) play?
+    - What sport does [James](PERSON) White play?
+- intent: player_team
+  examples: |
+    - Where does [LeBron](PERSON) play?
+    - In what team does [LeBron](PERSON) play?
+    - Where does he play?
+    - Where does she play?
+    - Does [Messi](PERSON) play in the Milan?
+- intent: nlu_fallback
+  examples: |
+    - tow
+- synonym: Los Angeles Lakers
+  examples: |
+    - Lakers
+    - lakers
+    - LA Lakers
+- synonym: '3'
+  examples: |
+    - three
+- synonym: none
+  examples: |
+    - no one
+    - none of the selected
+    - none of the list
+- synonym: '1'
+  examples: |
+    - one
+- synonym: '2'
+  examples: |
+    - two
+- synonym: '4'
+  examples: |
+    - four
+- lookup: choice
+  examples: |
+    - first
+    - second
+    - third
+    - fourth
+    - fifth
+    - last
+    - none
